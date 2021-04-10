@@ -94,3 +94,12 @@ We'll need to set this parameter and give it our trustore password in the comman
 You can also set this in intellij idea's edit configuration also in the application.yml (I am not sure how to do that I am still exploring !!)
 
 Note : don't store keystore which your application is using on the public repo (as it contains private key, someone might impersonate you and do nasty stuff).
+
+Also keep in mind that dont use keystore of the type JKS... use keystore of type PKCS12. 
+
+### Why not to use JKS ?
+
+<mark>because private key created using keystore of the type JKS can be CRACKED</mark>
+Read here - https://github.com/floyd-fuh/JKS-private-key-cracker-hashcat.. Yepp someone has made a tool named HASHCAT which can crack your private key !!!!
+
+Where to check the format of your keystore ? Using -list along with -v of keytool gives you the details of your keystore !!
