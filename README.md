@@ -103,3 +103,7 @@ Also keep in mind that dont use keystore of the type JKS... use keystore of type
 Read here - https://github.com/floyd-fuh/JKS-private-key-cracker-hashcat.. Yepp someone has made a tool named HASHCAT which can crack your private key !!!!
 
 Where to check the format of your keystore ? Using -list along with -v of keytool gives you the details of your keystore !!
+
+//TODO - 
+Include all your findings / issues you faces while working on project which required 2 way ssls
+like how to manage truststore / how to manage keystore etc..what is 1 way ssl..what is 2 way ssl ! which issue is faced when !
